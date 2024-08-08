@@ -1,5 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import React from "react";
+import PostOwnner from "@/components/PostOwnner";
+import Comment from "@/components/Comment";
 
 export default function Home() {
   return (
@@ -13,7 +16,7 @@ export default function Home() {
         className="mx-auto p-3 rounded rounded-3 shadow-sm bg-white"
       >
         {/* Post Owner Example*/}
-        <div className="vstack gap-3">
+        {/* <div className="vstack gap-3">
           <div className="d-flex align-items-center gap-3">
             <img
               src="/profileImages/handsome.jpg"
@@ -32,10 +35,11 @@ export default function Home() {
             <span className="text-muted">100 คน</span>
           </div>
           <hr className="m-0 border" />
-        </div>
+        </div> */}
+        <PostOwnner name="Pornpailin Jaowatthanaphong" studentId="660610777" likes={100}/> 
 
         {/* Comment Example */}
-        <div className="d-flex gap-2 my-2">
+        {/* <div className="d-flex gap-2 my-2">
           <img
             src="/profileImages/lisa.jpg"
             width="48"
@@ -55,10 +59,10 @@ export default function Home() {
               <span className="text-muted">999 คน</span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Reply Example */}
-        <div className="d-flex gap-2 my-2 ps-5">
+        {/* <div className="d-flex gap-2 my-2 ps-5">
           <img
             src="/profileImages/puppy.jpg"
             width="48"
@@ -78,7 +82,7 @@ export default function Home() {
               <span className="text-muted">2 คน</span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* map-loop render Comment component here */}
       </div>
